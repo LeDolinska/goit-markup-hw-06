@@ -23,34 +23,92 @@
 
   <body>
     <header class="header">
-      <div class="container header-cont">
-        <nav class="nav">
-          <a href="./index.html" class="logo"
-            >Web<span class="logo-studio">Studio</span></a
-          >
-          <ul class="nav-menu">
-            <li><a href="./index.html" class="nav-link studio">Studio</a></li>
-            <li><a href="" class="nav-link">Portfolio</a></li>
-            <li><a href="" class="nav-link">Contacts</a></li>
-          </ul>
-        </nav>
-        <address class="address">
-          <ul class="address-menu">
-            <li>
-              <a href="mailto:info@devstudio.com" class="address-link"
-                >info@devstudio.com</a
+      <div class="container header-container">
+        <a href="./index.html" class="logo"
+          >Web<span class="logo-studio">Studio</span></a
+        >
+
+        <button type="button" class="menu-toggle">
+          <svg class="hamburger" width="24" height="24">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
+        <div class="menu">
+          <button type="button" class="close-button">
+            <svg width="8" height="8" class="close-icon">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="nav">
+            <ul class="nav-menu">
+              <li><a href="./index.html" class="nav-link studio">Studio</a></li>
+              <li><a href="#" class="nav-link">Portfolio</a></li>
+              <li><a href="#" class="nav-link">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="address">
+            <ul class="address-menu">
+              <li>
+                <a href="mailto:info@devstudio.com" class="address-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+110001111111" class="address-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="social-media-menu">
+            <li class="social-media-link">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="social-media-link-a"
               >
+                <svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <a href="tel:+110001111111" class="address-link"
-                >+11 (000) 111-11-11</a
+            <li class="social-media-link">
+              <a
+                href="https://x.com/"
+                target="_blank"
+                class="social-media-link-a"
               >
+                <svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-link">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="social-media-link-a"
+              >
+                <svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-link">
+              <a
+                href="https://linkedin.com/"
+                target="_blank"
+                class="social-media-link-a"
+              >
+                <svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </header>
-
     <main>
       <section class="hero">
         <div class="container hero-cont">
@@ -64,11 +122,6 @@
           <h2 class="title-adv">Our advantages</h2>
           <ul class="adv-list">
             <li class="adv-card">
-              <div class="adv-img-box">
-                <svg class="adv-img" width="64" height="64">
-                  <use href="./images/icons.svg#icon-antenna-1"></use>
-                </svg>
-              </div>
               <h3 class="name-adv">Strategy</h3>
               <p class="description">
                 Our goal is to identify the business problem to walk away with
@@ -76,11 +129,6 @@
               </p>
             </li>
             <li class="adv-card">
-              <div class="adv-img-box">
-                <svg class="adv-img" width="64" height="64">
-                  <use href="./images/icons.svg#icon-clock-1"></use>
-                </svg>
-              </div>
               <h3 class="name-adv">Punctuality</h3>
               <p class="description">
                 Bring the key message to the brand's audience for the best price
@@ -88,11 +136,6 @@
               </p>
             </li>
             <li class="adv-card">
-              <div class="adv-img-box">
-                <svg class="adv-img" width="64" height="64">
-                  <use href="./images/icons.svg#icon-diagram-1"></use>
-                </svg>
-              </div>
               <h3 class="name-adv">Diligence</h3>
               <p class="description">
                 Research and confirm brands that present the strongest digital
@@ -100,11 +143,6 @@
               </p>
             </li>
             <li class="adv-card">
-              <div class="adv-img-box">
-                <svg class="adv-img" width="64" height="64">
-                  <use href="./images/icons.svg#icon-astronaut-1"></use>
-                </svg>
-              </div>
               <h3 class="name-adv">Technologies</h3>
               <p class="description">
                 Design practice focused on digital experiences. We bring forth a
@@ -121,7 +159,7 @@
           <ul class="team-menu">
             <li class="team-list">
               <img
-                src="./images/images-team/q-img-3.jpg"
+                src="./images/images-team/mark-guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
               />
@@ -178,7 +216,7 @@
             </li>
             <li class="team-list">
               <img
-                src="./images/images-team/q-img-2.jpg"
+                src="./images/images-team/tom-ford.jpg"
                 alt="Tom Ford"
                 width="264"
               />
@@ -235,7 +273,7 @@
             </li>
             <li class="team-list">
               <img
-                src="./images/images-team/q-img-1.jpg"
+                src="./images/images-team/camila-garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
               />
@@ -292,7 +330,7 @@
             </li>
             <li class="team-list">
               <img
-                src="./images/images-team/q-img.jpg"
+                src="./images/images-team/daniel-wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
               />
@@ -358,7 +396,7 @@
             <li class="port-box">
               <div class="port-box-img">
                 <img
-                  src="./images/images-portfolio/Bank.jpg"
+                  src="./images/images-portfolio/bank.jpg"
                   alt="Banking App"
                   width="360"
                 />
@@ -376,7 +414,7 @@
             <li class="port-box">
               <div class="port-box-img">
                 <img
-                  src="./images/images-portfolio/Cash.jpg"
+                  src="./images/images-portfolio/cash.jpg"
                   alt="Cashless Payment"
                   width="360"
                 />
@@ -394,7 +432,7 @@
             <li class="port-box">
               <div class="port-box-img">
                 <img
-                  src="./images/images-portfolio/Medi.jpg"
+                  src="./images/images-portfolio/medi.jpg"
                   alt="Meditation App"
                   width="360"
                 />
@@ -412,7 +450,7 @@
             <li class="port-box">
               <div class="port-box-img">
                 <img
-                  src="./images/images-portfolio/Taxi.jpg"
+                  src="./images/images-portfolio/taxi.jpg"
                   alt="Taxi Service"
                   width="360"
                 />
@@ -430,7 +468,7 @@
             <li class="port-box">
               <div class="port-box-img">
                 <img
-                  src="./images/images-portfolio/Screen.jpg"
+                  src="./images/images-portfolio/screen.jpg"
                   alt="Screen Illustrations"
                   width="360"
                 />
@@ -448,7 +486,7 @@
             <li class="port-box">
               <div class="port-box-img">
                 <img
-                  src="./images/images-portfolio/Online.jpg"
+                  src="./images/images-portfolio/online.jpg"
                   alt="Online Courses"
                   width="360"
                 />
@@ -467,7 +505,6 @@
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <div class="container footer-cont">
         <div class="footer-logo-text">
@@ -479,7 +516,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="footer-social-media">
+        <div class="footer-social-media-cont">
           <p class="footer-social-media-title">Social media</p>
           <ul class="social-media footer-social-media">
             <li class="social-media-link">
@@ -528,9 +565,9 @@
             </li>
           </ul>
         </div>
+
         <div class="footer-subscribe">
           <p class="text-sub">Subscribe</p>
-
           <form class="form-sub">
             <label class="form-label">
               <input
@@ -631,9 +668,15 @@
                   <use href="./images/icons.svg#icon-done"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="link-privacy-policy"> Privacy Policy</a></label
-            >
+              <p>
+                I accept the terms and conditions of the<a
+                  href=""
+                  class="link-privacy-policy"
+                >
+                  Privacy Policy</a
+                >
+              </p>
+            </label>
           </div>
 
           <button type="submit" class="modal-button">Send</button>
