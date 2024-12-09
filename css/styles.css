@@ -82,8 +82,6 @@ img {
     padding: 0;
     width: auto;
     max-width: 100%;
-
-
 }
 
 .menu {
@@ -304,16 +302,18 @@ img {
 .adv-list {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 72px;
-
-
 }
 
 .adv-card {
     width: 288px;
 }
 
+.adv-img-box {
+    display: none;;
+}
 .name-adv {
     font-weight: 700;
     font-size: 36px;
@@ -354,6 +354,7 @@ img {
 .team-menu {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 72px;
 }
@@ -377,7 +378,7 @@ img {
 }
 
 .team-card {
-    padding: 32px 0 32px;
+    padding: 32px 16px;
 
 }
 
@@ -443,6 +444,7 @@ img {
 .port-menu {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 48px;
 }
@@ -507,7 +509,6 @@ img {
 
 .footer {
     background-color: #2e2f42;
-
     padding: 96px 0;
 }
 
@@ -876,57 +877,292 @@ img {
 }
 
 @media (min-width: 768px) {
+    .header-container {
+        padding: 16px 16px 16px;
+    }
+    .logo {
+        margin-right: 120px;
+    }   
     .menu-toggle {
+        display: none;   
+    }
+    .social-media-menu {
         display: none;
-        /* Ховаємо кнопку */
+    }
+    .menu .close-button {
+        display: none;
     }
 
     .menu {
         display: flex;
-        /* Меню завжди відкрите */
         flex-direction: row;
-        /* Горизонтальне вирівнювання */
         justify-content: space-between;
         align-items: center;
+        position: static;
+        padding: 0;  
+        z-index: 1;
+        }
+
+    .nav-menu {
+        margin: 0;
+        padding: 0;
+        gap: 40px;
+        flex-direction: row;
+    }
+        
+    .address-menu {
+        gap: 8px;
+        margin: 0;
+    }
+    .address-menu li {
+        font-size: 12px;
+    }
+    
+    .address-link {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+    }
+    .nav-link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;   
+        position: relative;  
+        padding: 24px 0;        
+    }
+   
+    .studio::after {
+        content: "";
+        border-radius: 2px;
         width: 100%;
+        left: 0;
+        bottom: -1px;
+        height: 4px;
+        background-color: #404bbf;
+        display: block;
+        position: absolute;
+        
     }
-
-    .menu-items {
-        flex-direction: row;
-        /* Горизонтальне меню */
-    }
-
-    .menu-items a {
-        padding: 0 1rem;
-    }
-
-    .contact-info ul {
-        flex-direction: row;
-        /* Горизонтальне вирівнювання */
-        gap: 1rem;
-        /* Відстань між елементами */
-    }
-
-    /* Змінюємо порядок елементів у <address> */
-    .address-item:nth-child(1) {
-        order: 3;
-        /* Email */
-    }
-
-    .address-item:nth-child(2) {
+    .address-menu li:nth-child(1) {
         order: 1;
-        /* Адреса */
     }
-
-    .address-item:nth-child(3) {
+    .address-menu li:nth-child(2) {
         order: 2;
-        /* Телефон */
+    }  
+    .hero-cont {
+        gap: 36px;
+        padding: 112px 0;
+    } 
+    .title-hero {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;        
+    }  
+
+    .adv-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;    
+    }    
+    .adv-card {
+        width: 356px;
     }
+       
+    .team-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 64px;
+        column-gap: 24px;
+        
+    }
+    .team-list {
+        width: 264px;
+    }     
+    .port-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+        
+    }
+    .port-box {
+        height: 420px;
+        width: 356px;
+    }
+        
+    .port-box-img {
+        width: 356px;
+        height: 300px;
+    }
+   .footer {
+       background-color: #2e2f42;
+       padding: 96px 0;
+   }
+
+   .footer-cont {
+       flex-direction: row;
+       margin-left: 108px;
+       align-items: baseline;
+       row-gap: 72px;
+       column-gap: 24px;
+       flex-wrap: wrap;
+   }
+   .footer-logo-text {
+       align-items: flex-start;
+   }
+   .footer-text {      
+       width: 264px;
+   }
+   .footer-social-media-cont {
+    align-items: flex-start;
+   }
+   .footer-subscribe {
+    align-items: flex-start;
+   }
+   .input-sub {
+        margin: 0;
+   }
+   .button-sub {
+        margin: 0;
+   }
+
+   .form-sub {
+       display: flex;
+       gap: 24px;
+   }
+      
+   .modal {
+       width: 408px;
+       min-height: 584px;
+    }
+   .input-wrapper {
+       width: 360px;
+    }
+   .comment-container {
+       width: 360px;
+    }   
 }
 
-/*@media(max-width:768px) {
-    .menu-toggle {
-        top: 16px;
-        left: 16px;
+@media (min-width: 1158px) {
+    .container {
+        padding: 0 15px;
+    }
+    .header-cont {
+        padding: 0 15px;
+    }
+    .logo {
+        margin: 24px 76px 24px 0;
+        
+    }
+    .address-menu {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .address-menu li {
+        font-size: 16px;
+    }
+
+    .address-link {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+    .hero-cont {
+        gap: 48px;
+        padding: 188px 0;
+    }
+    .advantages {
+        padding: 120px 0;
+    }
+    .adv-img-box {
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        background-color: #f4f4fd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 24px 100px;
+        height: 112px;
+        margin-bottom: 8px;
+    }
+     
+    .adv-list {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 24px;
+    }
+
+    .adv-card {
+        flex-basis: calc((100% - 72px) / 4);
+    }
+    .team {
+        padding: 120px 0;
+    }
+    .team-menu {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
+    .team-list {
+        flex-basis: calc((100% - 72px) / 4);
+        
+    }
+    .portfolio {
+    padding: 120px 0;
+   }
+
+    .port-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 48px;
+        column-gap: 24px;
+
+    }
+
+    .port-box {
+        height: 420px;
+        width: 360px;
+    }
+
+    .port-box-img {
+        width: 360px;
+        height: 300px;
+    }
+
+    .footer {
+        background-color: #2e2f42;
+        padding: 96px 0;
+    }
+
+    .footer-cont {        
+        gap: 0;
+        flex-wrap: nowrap;
+    }
+
+    .footer-logo-text {
+        margin-right: 120px
+    }
+    .footer-subscribe {
+        margin-left: 80px;
+    }
+
+    .input-sub {
+        opacity: 1;
     }
 }
+@media (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-image@2x.jpg);
+    }
+
+}
+
+    
+
+    
+
