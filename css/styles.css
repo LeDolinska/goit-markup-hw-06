@@ -102,7 +102,7 @@ img {
     flex-direction: column;
 }
 
-.close-button {
+.menu .close-button {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -969,6 +969,9 @@ img {
     .adv-card {
         width: 356px;
     }
+        .name-adv {
+            text-align: left;
+        }
        
     .team-menu {
         flex-direction: row;
@@ -1099,11 +1102,10 @@ img {
     .adv-card {
         flex-basis: calc((100% - 72px) / 4);
     }
-        .name-adv {
+    .name-adv {
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;            
-        text-align: left;
     }
     .team {
         padding: 120px 0;
