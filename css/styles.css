@@ -547,6 +547,10 @@ img {
     gap: 16px;
 }
 
+.footer-social-media {
+    gap: 16px;
+
+}
 .footer-social-media-title {
     font-weight: 500;
     font-size: 16px;
@@ -1005,7 +1009,7 @@ img {
 
    .footer-cont {
        flex-direction: row;
-       margin-left: 108px;
+       
        align-items: baseline;
        row-gap: 72px;
        column-gap: 24px;
@@ -1025,6 +1029,7 @@ img {
    }
    .input-sub {
         margin: 0;
+        width: 264px;
    }
    .button-sub {
         margin: 0;
@@ -1151,7 +1156,8 @@ img {
     }
 
     .footer-logo-text {
-        margin-right: 120px
+        margin-right: 120px;
+        gap: 0;
     }
     .footer-subscribe {
         margin-left: 80px;
